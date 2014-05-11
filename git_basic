@@ -1,6 +1,16 @@
-th4@th4-K53E:~/git_repo/git_test01$ ls
+<html>
+<head>
+  <title>Hello world in Git</title>
+  <meta name="description" content="hello world in Git">
+</head>
+<body>
+  <h1>Hello world!!</h1>
+</body>
+</html>
+
+$ ~/git_repo/git_test01$ ls
 index.html  index.html~
-th4@th4-K53E:~/git_repo/git_test01$ git status
+$ ~/git_repo/git_test01$ git status
 # On branch master
 #
 # 最初のコミット
@@ -11,11 +21,11 @@ th4@th4-K53E:~/git_repo/git_test01$ git status
 #	index.html
 #	index.html~
 nothing added to commit but untracked files present (use "git add" to track)
-th4@th4-K53E:~/git_repo/git_test01$ git add index.html
-th4@th4-K53E:~/git_repo/git_test01$ cp index.html ../index.html
-th4@th4-K53E:~/git_repo/git_test01$ emacs index.html
-th4@th4-K53E:~/git_repo/git_test01$ git add index.html
-th4@th4-K53E:~/git_repo/git_test01$ git status
+$ ~/git_repo/git_test01$ git add index.html
+$ ~/git_repo/git_test01$ cp index.html ../index.html
+$ ~/git_repo/git_test01$ emacs index.html
+$ ~/git_repo/git_test01$ git add index.html
+$ ~/git_repo/git_test01$ git status
 # On branch master
 #
 # 最初のコミット
@@ -29,22 +39,22 @@ th4@th4-K53E:~/git_repo/git_test01$ git status
 #   (use "git add <file>..." to include in what will be committed)
 #
 #	index.html~
-th4@th4-K53E:~/git_repo/git_test01$ git commit -a -m "add in hello world HTML"
+$ ~/git_repo/git_test01$ git commit -a -m "add in hello world HTML"
 [master (root-commit) fae5858] add in hello world HTML
  1 file changed, 5 insertions(+)
  create mode 100644 index.html
-th4@th4-K53E:~/git_repo/git_test01$ git log
+$ ~/git_repo/git_test01$ git log
 commit fae5858130e3311821a5d2f8654d9c16c1e8a62d
 Author: infinith4 <infinity.th4@gmail.com>
 Date:   Sun May 11 12:27:48 2014 +0900
 
     add in hello world HTML
-th4@th4-K53E:~/git_repo/git_test01$ emacs index.html
-th4@th4-K53E:~/git_repo/git_test01$ git add index.html
-th4@th4-K53E:~/git_repo/git_test01$ git commit -a -m "add <head> and <title>"
+$ ~/git_repo/git_test01$ emacs index.html
+$ ~/git_repo/git_test01$ git add index.html
+$ ~/git_repo/git_test01$ git commit -a -m "add <head> and <title>"
 [master f31ad04] add <head> and <title>
  1 file changed, 3 insertions(+)
-th4@th4-K53E:~/git_repo/git_test01$ git commit -m "add <head> and <title>" \
+$ ~/git_repo/git_test01$ git commit -m "add <head> and <title>" \
 > -m "This allows for a more semantic document."
 # On branch master
 # Untracked files:
@@ -52,15 +62,15 @@ th4@th4-K53E:~/git_repo/git_test01$ git commit -m "add <head> and <title>" \
 #
 #	index.html~
 nothing added to commit but untracked files present (use "git add" to track)
-th4@th4-K53E:~/git_repo/git_test01$ git add index.html
-th4@th4-K53E:~/git_repo/git_test01$ git commit -m "add <head> and <title>" -m "This allows for a more semantic document."
+$ ~/git_repo/git_test01$ git add index.html
+$ ~/git_repo/git_test01$ git commit -m "add <head> and <title>" -m "This allows for a more semantic document."
 # On branch master
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
 #
 #	index.html~
 nothing added to commit but untracked files present (use "git add" to track)
-th4@th4-K53E:~/git_repo/git_test01$ git log
+$ ~/git_repo/git_test01$ git log
 commit f31ad041b7d588cabbd576c4e714942683de6e87
 Author: infinith4 <infinity.th4@gmail.com>
 Date:   Sun May 11 12:29:25 2014 +0900
@@ -72,42 +82,42 @@ Author: infinith4 <infinity.th4@gmail.com>
 Date:   Sun May 11 12:27:48 2014 +0900
 
     add in hello world HTML
-th4@th4-K53E:~/git_repo/git_test01$ git branch RB_1.0
-th4@th4-K53E:~/git_repo/git_test01$ git branch
+$ ~/git_repo/git_test01$ git branch RB_1.0
+$ ~/git_repo/git_test01$ git branch
   RB_1.0
 * master
-th4@th4-K53E:~/git_repo/git_test01$ emacs index.html
-th4@th4-K53E:~/git_repo/git_test01$ git branch RB_1.0 master
+$ ~/git_repo/git_test01$ emacs index.html
+$ ~/git_repo/git_test01$ git branch RB_1.0 master
 fatal: A branch named 'RB_1.0' already exists.
-th4@th4-K53E:~/git_repo/git_test01$ git branch -d RB_1.0
+$ ~/git_repo/git_test01$ git branch -d RB_1.0
 Deleted branch RB_1.0 (was f31ad04).
-th4@th4-K53E:~/git_repo/git_test01$ git branch RB_1.0 master
-th4@th4-K53E:~/git_repo/git_test01$ emacs index.html
-th4@th4-K53E:~/git_repo/git_test01$ git add index.html
-th4@th4-K53E:~/git_repo/git_test01$ git commit -m "add in bio link"
+$ ~/git_repo/git_test01$ git branch RB_1.0 master
+$ ~/git_repo/git_test01$ emacs index.html
+$ ~/git_repo/git_test01$ git add index.html
+$ ~/git_repo/git_test01$ git commit -m "add in bio link"
 [master 3877843] add in bio link
  1 file changed, 3 insertions(+)
-th4@th4-K53E:~/git_repo/git_test01$ git checkout RB_1.0 
+$ ~/git_repo/git_test01$ git checkout RB_1.0 
 Switched to branch 'RB_1.0'
-th4@th4-K53E:~/git_repo/git_test01$ emacs index.html
-th4@th4-K53E:~/git_repo/git_test01$ git add index.html
-th4@th4-K53E:~/git_repo/git_test01$ git commit -m "add in description element to the metadata"
+$ ~/git_repo/git_test01$ emacs index.html
+$ ~/git_repo/git_test01$ git add index.html
+$ ~/git_repo/git_test01$ git commit -m "add in description element to the metadata"
 [RB_1.0 a3247b8] add in description element to the metadata
  1 file changed, 1 insertion(+)
-th4@th4-K53E:~/git_repo/git_test01$ git tag 1.0 RB_1.0 
-th4@th4-K53E:~/git_repo/git_test01$ git tag
+$ ~/git_repo/git_test01$ git tag 1.0 RB_1.0 
+$ ~/git_repo/git_test01$ git tag
 1.0
-th4@th4-K53E:~/git_repo/git_test01$ git checkout master 
+$ ~/git_repo/git_test01$ git checkout master 
 Switched to branch 'master'
-th4@th4-K53E:~/git_repo/git_test01$ git rebase RB_1.0 
+$ ~/git_repo/git_test01$ git rebase RB_1.0 
 First, rewinding head to replay your work on top of it...
 Applying: add in bio link
-th4@th4-K53E:~/git_repo/git_test01$ git branch -d RB_1.0
+$ ~/git_repo/git_test01$ git branch -d RB_1.0
 Deleted branch RB_1.0 (was a3247b8).
-th4@th4-K53E:~/git_repo/git_test01$ git branch RB_1.0.1 1.0
-th4@th4-K53E:~/git_repo/git_test01$ git checkout RB_1.0.1 
+$ ~/git_repo/git_test01$ git branch RB_1.0.1 1.0
+$ ~/git_repo/git_test01$ git checkout RB_1.0.1 
 Switched to branch 'RB_1.0.1'
-th4@th4-K53E:~/git_repo/git_test01$ git log
+$ ~/git_repo/git_test01$ git log
 commit a3247b82049762f7c16146127db5f443e15e6817
 Author: infinith4 <infinity.th4@gmail.com>
 Date:   Sun May 11 12:40:43 2014 +0900
@@ -125,7 +135,7 @@ Author: infinith4 <infinity.th4@gmail.com>
 Date:   Sun May 11 12:27:48 2014 +0900
 
     add in hello world HTML
-th4@th4-K53E:~/git_repo/git_test01$ git log --pretty=oneline
+$ ~/git_repo/git_test01$ git log --pretty=oneline
 a3247b82049762f7c16146127db5f443e15e6817 add in description element to the metadata
 f31ad041b7d588cabbd576c4e714942683de6e87 add <head> and <title>
 fae5858130e3311821a5d2f8654d9c16c1e8a62d add in hello world HTML
