@@ -1,4 +1,8 @@
+$ git config --global user.name "git_user1" 
+$ git config --global user.email "git_user1@email.com"
+
 add git_user1
+
 <html>
 <head>
   <title>Hello world in Git</title>
