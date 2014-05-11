@@ -139,12 +139,12 @@ $ ~/git_repo/git_test01$ git log --pretty=oneline
 a3247b82049762f7c16146127db5f443e15e6817 add in description element to the metadata
 f31ad041b7d588cabbd576c4e714942683de6e87 add <head> and <title>
 fae5858130e3311821a5d2f8654d9c16c1e8a62d add in hello world HTML
-$ ~/git_repo/git_test01$ git archive --format=tar \
+th4@th4-K53E:~/git_repo/git_test01$ git archive --format=tar \
 > --prefix=mysite-1.0/ 1.0 \
 > | gzip > mysite-1.0.tar.gz
-$ ~/git_repo/git_test01$ ls
+th4@th4-K53E:~/git_repo/git_test01$ ls
 index.html  index.html~  mysite-1.0.tar.gz
-$ ~/git_repo/git_test01$ git archive --format=tar --prefix=mysite-1.0/ 1.0 > mysite-1.0.zip
-$ ~/git_repo/git_test01$ ls
+th4@th4-K53E:~/git_repo/git_test01$ git archive --format=tar --prefix=mysite-1.0/ 1.0 > mysite-1.0.zip
+th4@th4-K53E:~/git_repo/git_test01$ ls
 index.html  index.html~  mysite-1.0.tar.gz  mysite-1.0.zip
 
